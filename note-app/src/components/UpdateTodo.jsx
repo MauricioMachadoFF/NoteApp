@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {MdClose} from "react-icons/md";
 
-function UpdateTodo({onClose, id, text, onUpdate, pos}) {
+function UpdateTodo({onClose, text, onUpdate}) {
     const [input, setInput] = useState('')   
     
     return (
@@ -11,7 +11,7 @@ function UpdateTodo({onClose, id, text, onUpdate, pos}) {
                 <input type="text" value={input} placeholder={text} onChange={(e) => setInput(e.target.value)}/>
                 <button onClick={(e) => {
                     e.preventDefault()
-                    onUpdate(input, pos)
+                    onUpdate(input, text)
                     onClose()
                 }}>Change Todo</button>
             </form>

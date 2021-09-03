@@ -9,7 +9,7 @@ function TodoList({todos, onDelete, onUpdate}) {
     return (
         <div>
             {todos.map((todo, index) => 
-                <Todo text={todo.text} id={todo.id} onDelete={onDelete} key={index} pos={index} onUpdate={onUpdate}/>
+                <Todo text={todo.text} id={todo.id} onDelete={onDelete} key={index} onUpdate={onUpdate}/>
             )}
         </div>
     )

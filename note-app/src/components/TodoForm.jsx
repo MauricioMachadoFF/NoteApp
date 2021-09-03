@@ -26,13 +26,14 @@ function TodoForm() {
         setTodos(removedArray)
     }
     
-    const updateButton = (input, pos) => {
-        const res = todos
-        res[pos].text = input
-        console.log(res)
-        setTodos(res)
+    const updateButton = (input, text) => {
+        const elementIndex = todos.findIndex(todo => todo.text === text)
+        let newTodos = [...todos]
+        newTodos[elementIndex].text = input
+        setTodos(newTodos)
     }
     
+
     return (
         <div>
             <form>
