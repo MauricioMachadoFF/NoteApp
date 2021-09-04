@@ -1,0 +1,40 @@
+@import "../variables/variables.scss";
+
+.todo-container{
+    width: 100%;
+}
+
+.todo-content {
+    color: $white;
+    width: 100%;
+    background: $lighterBlack;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2vh;
+    padding: 1vh 10px 1vh 0px;
+
+    button{
+        background: $lightGreen;
+        border:none;
+    }
+    button:hover{
+        cursor: pointer;
+        background: $lighterGreen;
+    }
+    p{
+        width: min-content;
+    }
+}
+
+.text {
+    flex-grow: 24;
+    padding-left: 10px;
+    width: fit-content;
+}
+
+.todo-buttons {
+    flex-grow: 1;
+    border-radius: 50%;
+    padding: 0;
+}

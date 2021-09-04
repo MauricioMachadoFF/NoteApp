@@ -1,0 +1,59 @@
+@import "../variables/variables.scss";
+
+.layout {
+    display: flex;
+    flex-direction: column;
+
+    form {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        input, button{
+            margin: 2vh 0px 2vh 0px;
+            padding: 10px 10px 10px 10px;
+            background: transparent;
+            color: $white;
+            border: 1px solid $lightGreen;
+            font-family: inherit;
+            font-size: inherit;
+        }
+        input{
+            border-radius: 5px 0px 0px 5px;
+            flex-grow: 4;
+        } 
+        input::placeholder{
+            color: $darkWhite;
+        }
+        button{
+            border-radius: 0px 5px 5px 0px;
+            flex-grow: 1;
+            background: $lightGreen;
+        }  
+        
+        button:hover {
+            cursor: pointer;
+            background: $lighterGreen;
+        }
+    }
+
+    
+}
+
+.update-button {
+    background: $lightGreen;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+    transition: all .4s;
+    color: inherit;
+}
+
+.update-button:hover {
+    background: $lighterGreen;
+    width: 32px;
+    height: 32px;
+}

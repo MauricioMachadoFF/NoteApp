@@ -1,0 +1,9 @@
+@import "./styles/variables/variables.scss";
+
+body{
+    background: $darkMode;
+    font-family: $text-font;
+    font-size: $size-text;
+    margin: 0%;
+    padding: 0%;
+}
