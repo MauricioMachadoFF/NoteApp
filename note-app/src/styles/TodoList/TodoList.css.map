@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,uEAAI;AACZ,OAAO,CAAC,iHAAI;ADCZ,AAAA,oBAAoB,CAAC;EACjB,KAAK,EAAE,GAAG;EACV,UAAU,EAAE,GAAG;EACf,aAAa,EAAE,GAAG;EAClB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,MAAM;EACnB,KAAK,ECMD,OAAO;EDLX,OAAO,EAAE,mBAAmB;CAC/B",
+    "sources": [
+        "TodoList.scss",
+        "../variables/variables.scss"
+    ],
+    "names": [],
+    "file": "TodoList.css"
+}

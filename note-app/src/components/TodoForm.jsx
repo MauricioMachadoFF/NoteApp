@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import TodoList from './TodoList';
 
+import '../styles/TodoForm/TodoForm.css'
+
 function TodoForm() {
     const [input, setInput] = useState('');
     const [todos, setTodos] = useState([]);
@@ -35,9 +37,10 @@ function TodoForm() {
     
 
     return (
-        <div>
+        <div className="todo-app-container">
+            <h1>Todo App</h1>
             <form>
-                <input type="text" value={input} placeholder="Add a Todo" onChange={(e) => setInput(e.target.value)}/>
+                <input className="input" type="text" value={input} placeholder="Add a Todo" onChange={(e) => setInput(e.target.value)}/>
                 <button onClick={handleSubmit}>Add Todo</button> 
             </form>
             <TodoList todos={todos} onDelete={deleteButton} onUpdate={updateButton}/>

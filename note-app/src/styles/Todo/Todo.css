@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,400;1,200&display=swap");
+.todo-container {
+  width: 100%;
+}
+
+.todo-content {
+  color: #ffffff;
+  width: 100%;
+  background: #535353;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 2vh;
+  padding: 1vh 10px 1vh 0px;
+}
+
+.todo-content button {
+  background: #1dc95b;
+  border: none;
+}
+
+.todo-content button:hover {
+  cursor: pointer;
+  background: #32ed75;
+}
+
+.todo-content p {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+.text {
+  -webkit-box-flex: 24;
+      -ms-flex-positive: 24;
+          flex-grow: 24;
+  padding-left: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.todo-buttons {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-radius: 50%;
+  padding: 0;
+}
+/*# sourceMappingURL=Todo.css.map */
